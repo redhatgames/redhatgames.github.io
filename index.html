@@ -1,30 +1,144 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hang tight! | The Redhats</title>
-		<style type="text/css">
-			body {
-				color: black;
-				font-family: sans-serif;
-			}
-			.subheading {
-				margin-top: 100px;
-				opacity: 0.5;
-				font-size: 15px;
-				align-items: center;
-			}
-			.heading {
-				font-size: 25px;
-				align-items: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="subheading">
-			<p>HANG TIGHT!</p>
-		</div>
-		<div class="heading">
-			<p>WEBSITE COMING SOON!</p>
-		</div>
-	</body>
+<head>
+  <title>Home of the proud game makers.</title>
+  <link rel="icon" type="image/png" href="https://u.cubeupload.com/Shocked/redhats.png"/>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Red%20Hat%20Display:400,500,600,700,800,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #040826;
+  color: #234;
+  margin-bottom: 50px;
+}
+.subtitle {
+  font-weight: 900;
+  margin-top: 100px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-paragraph {
+  color: #212121;
+  font-weight: 900;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  width: 500px;
+  text-align: center;
+}
+.container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: 900;
+  color: #69C;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #69C;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #69C; }
+  49% { background-color: rgba(102, 153, 204, 0.1); }
+  50% { background-color: transparent; }
+  99% { background-color: rgba(102, 153, 204, 0.9); }
+  100%  { background-color: #69C; }
+}
+
+img {
+  opacity: 1;
+  transition: 0.25s;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+a[href="#"], a[href="https://redhatgames.github.io/games"], a[href="https://redhatgames.github.io/bundles"] {
+  color: #374293;
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: 400;
+  font-size: 18px;
+}
+a[href="#"]:hover, a[href="https://redhatgames.github.io/games"]:hover, a[href="https://redhatgames.github.io/bundles"]:hover {
+  color: #E11F3C;
+  font-weight: 900;
+  font-size: 22px;
+}
+.navButton {
+  font-weight: 500;
+  border: 2px solid;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #E11F3C;
+  color: #E11F3C;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
+  transition: 0.25s;
+}
+.navButton:hover {
+  background-color: #E11F3C;
+  font-size: 22px;
+  padding: 10px 17px;
+  color: #040826;
+}
+</style>
+<div class="nav">
+  <a href="#"><img src="https://u.cubeupload.com/Shocked/redhats.png" alt="RedHat Games Icon" style="width: 100px;"></a>
+  <style>
+    .line {
+      margin-right: 15px;
+      border-left: 2px solid #374293;
+      height: 60px;
+      border-radius: 50px;
+    }
+  </style>
+  <div class="line"></div>
+  <p>&nbsp; <a href="#">Home</a> &nbsp;</p>
+  <p>&nbsp; <a href="https://redhatgames.github.io/games">Games</a> &nbsp;</p>
+  <p>&nbsp; <a href="https://redhatgames.github.io/bundles">Bundles</a> &nbsp;</p>
+  <p>&nbsp; <a href="mailto:studio.redhat@gmail.com"><button class="navButton">Contact Us!</button></a> &nbsp;</p>
+</div>
+</body>
 </html>
